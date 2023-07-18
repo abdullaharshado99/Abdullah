@@ -1,0 +1,15 @@
+def flipAndInvertImage(self, image):
+        res = [[]]*3
+        for i in range(len(image)):
+            image[i].reverse()
+
+        for z in range(len(image)):
+            for j in range(len(image)):
+                if image[z][j] == 0:
+                    image[z][j] = 1
+                else:
+                    image[z][j] = 0
+        return image
+flipAndInvertImage(None, [[1,1,0],[1,0,1],[0,0,0]])
+
+// output = [[1,0,0],[0,1,0],[1,1,1]]
