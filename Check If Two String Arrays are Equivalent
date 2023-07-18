@@ -1,0 +1,10 @@
+def arrayStringsAreEqual(self, word1, word2):
+        node1 = ''.join(str(word) for word in word1)
+        node2 = ''.join(str(word) for word in word2)
+        if node1 == node2:
+            return True
+        else:
+            return False
+arrayStringsAreEqual(None, ["ab", "c"], ["a", "bc"])
+
+// output = True
