@@ -1,0 +1,14 @@
+def leftRightDifference(self, nums):
+        res = []
+
+        for i in range(len(nums)):
+           leftSum = sum(nums[:i + 1])
+
+           rightSum = sum(nums[i:])
+
+           res.append(abs(leftSum - rightSum))
+
+        return res
+leftRightDifference(None, [10,4,8,3])
+
+//output = [15,1,11,22]
