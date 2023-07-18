@@ -1,0 +1,9 @@
+def arithmeticTriplets(self, nums, diff):
+        count = 0
+        for num in nums:
+            if num + diff in nums and num + diff*2 in nums:
+               count += 1
+        return count 
+arithmeticTriplets(None, [0,1,4,6,7,10], 3)
+
+// output = 2
