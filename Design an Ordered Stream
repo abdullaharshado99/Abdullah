@@ -1,0 +1,29 @@
+def __init__(self, n):
+        self.seen = {}
+        self.ptr = 1
+
+    def insert(self, id, value):
+        seen, ptr = self.seen, self.ptr
+
+        seen[id] = value
+        result = []
+        while ptr in seen:
+            result.append(seen[ptr])
+            del seen[ptr]
+            ptr += 1
+
+        self.ptr = ptr
+        return result
+
+obj = OrderedStream(5)
+obj.insert(3, "ccccc")
+obj.insert(1, "aaaaa")
+obj.insert(2, "bbbbb")
+obj.insert(5, "eeeee")
+obj.insert(4, "ddddd")
+        
+
+
+# Your OrderedStream object will be instantiated and called as such:
+# obj = OrderedStream(n)
+# param_1 = obj.insert(idKey,value)
