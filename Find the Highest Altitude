@@ -1,0 +1,10 @@
+def largestAltitude(self, gain):
+        count = 0
+        max_count = 0
+        for i in gain:
+            count += i
+            max_count = max(max_count, count)
+        return max_count
+largestAlltitude(None, [-5,1,5,0,-7])
+
+// output = 1
