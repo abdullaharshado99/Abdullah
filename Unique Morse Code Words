@@ -1,0 +1,19 @@
+def uniqueMorseRepresentations(self, words):
+        s = set()
+        node = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
+        for word in words:
+            count = ''
+            for lenn in word:
+                count += node[ord(lenn) - ord('a')]
+            s.add(count)
+
+        return len(s)
+uniqueMorseRepresentations(None, ["gin","zen","gig","msg"])
+
+// output = 2
+// Explanation: The transformation of each word is:
+"gin" -> "--...-."
+"zen" -> "--...-."
+"gig" -> "--...--."
+"msg" -> "--...--."
+There are 2 different transformations: "--...-." and "--...--.".
