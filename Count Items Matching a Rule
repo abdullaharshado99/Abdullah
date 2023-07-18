@@ -1,0 +1,10 @@
+def countMatches(self, items, ruleKey, ruleValue):
+        dictt = {'type': 0, 'color': 1, 'name': 2}
+        node = 0
+        for i in items:
+            if i[dictt[ruleKey]] == ruleValue:
+                node += 1
+        return node
+countMatches(None, [["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]], 'color', 'silver')
+
+// output = 1
