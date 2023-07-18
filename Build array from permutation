@@ -1,0 +1,13 @@
+def buildArray(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        res = []
+        for i in range(len(nums)):
+            node = nums[nums[i]]
+            res.append(node)
+        return res
+buidArray(None, [0,2,1,5,3,4])
+
+// output = [0,1,2,4,5,3]
