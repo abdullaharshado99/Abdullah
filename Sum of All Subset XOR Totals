@@ -1,0 +1,9 @@
+def subsetXORSum(self, nums):
+        count = 0
+        for i in nums:
+            count |= i
+            node = count * 2**(len(nums)-1)
+        return node
+subsetXORSum(None, [1,3])
+
+// output = 6
