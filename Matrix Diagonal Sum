@@ -1,0 +1,14 @@
+def diagonalSum(self, mat):
+        res = []
+        n = len(mat)
+        primary_sum = secondary_sum = 0
+
+        for i in range(n):
+            primary_sum += mat[i][i]
+
+            secondary_sum += mat[i][n - i - 1] if i != n - i - 1 else 0
+
+        return primary_sum + secondary_sum
+diagonalSum(None, [[1,2,3],[4,5,6],[7,8,9]])
+
+// output = 25
