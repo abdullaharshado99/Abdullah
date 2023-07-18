@@ -1,0 +1,13 @@
+def deleteGreatestValue(self, grid):
+        res = 0
+        for _ in range(len(grid[0])):
+            lis = -1
+            for x in range(len(grid)):
+                node = max(grid[x])
+                lis = max(lis, node)
+                grid[x].remove(node)
+            res += lis
+        return res
+deleteGreatestValue(None, [[1,2,4],[3,3,1]])
+
+// output = 8
