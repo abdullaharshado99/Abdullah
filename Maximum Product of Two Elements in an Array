@@ -1,0 +1,9 @@
+def maxProduct(self, nums):
+        num1 = max(nums)
+        nums.remove(num1)
+        num2 = max(nums)
+        maxm = (num1-1)*(num2-1)
+        return maxm
+maxProduct(None, [3,4,5,2])
+
+// output = 12
