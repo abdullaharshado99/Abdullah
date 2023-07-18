@@ -1,0 +1,6 @@
+def maximizeSum(self, nums, k):
+        node = max(nums) * k + (k - 1) * k // 2
+        return node
+maximizeSum(None, [1,2,3,4,5], 3)
+
+// output = 18
