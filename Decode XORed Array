@@ -1,0 +1,10 @@
+def decode(self, encoded, first):
+        res = []
+        res.append(first)
+        for i in range(len(encoded)):
+           node = encoded[i] ^ res[i]
+           res.append(node)
+        return res
+decode(None, [1,2,3], 1)
+
+// Output = [1,0,2,1]
