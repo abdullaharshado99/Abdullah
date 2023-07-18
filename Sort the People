@@ -1,0 +1,9 @@
+def sortPeople(self, names, heights):
+        for i in range(len(heights)):
+            max_indx = heights.index(max(heights[i:]))
+            names[i], names[max_indx] = names[max_indx], names[i]
+            heights[i], heights[max_indx] = heights[max_indx], heights[i]
+        return names
+sortPeople(None, ["Mary","John","Emma"], [180,165,170])
+
+// Output = ["Mary","Emma","John"]
