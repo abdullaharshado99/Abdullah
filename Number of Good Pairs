@@ -1,0 +1,10 @@
+def numIdenticalPairs(self, nums):        
+        sol = 0
+        for i in range(len(nums)):
+            for j in range(i + 1, len(nums)):
+                if nums[i] == nums[j]:
+                    sol += 1
+        return sol
+numIdenticalPairs(None, [1,2,3,1,1,3])
+
+// output = 4
