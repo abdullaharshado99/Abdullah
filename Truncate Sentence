@@ -1,0 +1,16 @@
+def truncateSentence(self, s, k):
+        res = []
+        node = s.split()
+        for i in node:
+            res.append(i)
+            if len(res) == k:
+                break
+        nos =  ' '.join(res)
+        return nos
+truncateSentence(None, "Hello how are you Contestant", 4)
+
+// Output = "Hello how are you"
+// Explanation:
+The words in s are ["Hello", "how" "are", "you", "Contestant"].
+The first 4 words are ["Hello", "how", "are", "you"].
+Hence, you should return "Hello how are you".
