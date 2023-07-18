@@ -1,0 +1,9 @@
+def finalValueAfterOperations(self, operations):
+        x1 = operations.count('X++')
+        x2 = operations.count('++X')
+        x3 = operations.count('X--')
+        x4 = operations.count("--X")
+        return x1+x2-x3-x4
+finalValueAfterOperations(None, ["--X","X++","X++"])
+
+// output = 1
