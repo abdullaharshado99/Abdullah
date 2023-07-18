@@ -1,0 +1,9 @@
+def maximumWealth(self, accounts):
+        max_num = 0
+        for i in range(len(accounts)):
+            total_num = sum(accounts[i])
+            max_num = max(max_num, total_num)
+        return max_num
+maximumWealth(None, [[1,2,3],[3,2,1]])
+
+// output = 6
