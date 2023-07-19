@@ -1,0 +1,14 @@
+def findGCD(self, nums):
+        result = 1
+        minn = min(nums)
+        i = minn
+        maxx = max(nums)
+
+        while i > 1:
+            if minn%i==0 and maxx%i==0:
+                return i
+            i-=1
+        return result
+findGCD(None, [2,5,6,9,10])
+
+// output =2
