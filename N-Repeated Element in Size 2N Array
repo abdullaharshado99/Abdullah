@@ -1,0 +1,8 @@
+def repeatedNTimes(self, nums):
+        for i , val in enumerate(nums):
+            count = nums.count(val)
+            if count > 1:
+                return val
+repeatedNTimes(None, [1, 2, 3, 3])
+
+// output = 3
