@@ -1,0 +1,15 @@
+def countNegatives(self, grid):
+        count = 0
+        n,m = len(grid), len(grid[0])
+        for i in range(n):
+            for j in range(m):
+                if grid[i][j] < 0:
+                    count += (n-i) * (m-j)
+                    m = j
+                    break
+            if m == 0:
+                break
+        return count
+countNegatives(None, [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]])
+
+//output = 8
