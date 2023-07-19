@@ -1,0 +1,11 @@
+def mergeSimilarItems(self, items1, items2):
+        from collections import defaultdict
+        dictt = defaultdict(int)
+        mergeitem = items1 + items2
+        for val, weig in mergeitem:
+            dictt[val] += weig
+
+        return sorted(dictt.items())
+mergeSimilarItems(None, [[1,1],[4,5],[3,8]], [[3,1],[1,5]])
+
+// output =  [[1,6],[3,9],[4,5]]
