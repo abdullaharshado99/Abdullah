@@ -1,0 +1,14 @@
+def countGoodRectangles(self, rectangles):
+        max_count = count = 0
+        for i in rectangles:
+            minn = min(i)
+            if minn > max_count:
+                max_count = minn
+                count = 1
+            elif minn == max_count:
+                count += 1
+
+        return count
+countGoodRectangles(None, [[5,8],[3,9],[5,12],[16,5]])
+
+// output = 3
