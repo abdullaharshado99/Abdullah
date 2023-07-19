@@ -1,0 +1,10 @@
+def targetIndices(self, nums, target):
+        nums = sorted(nums)
+        node = []
+        for i in range(len(nums)):
+            if nums[i] == target:
+                node.append(i)
+        return node
+targetIndices(None, [1,2,5,2,3], 2)
+
+// output = [1, 2]
