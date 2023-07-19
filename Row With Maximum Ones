@@ -1,0 +1,12 @@
+def rowAndMaximumOnes(self, mat):
+        result = [0,0]
+
+        for i , val in enumerate(mat):
+            count = val.count(1)
+            if count > result[1]:
+                result[0] = i
+                result[1] = count
+        return result
+rowAndMaximumOnes(None, [[0,0,0],[0,1,1]])
+
+// output = [1, 2]
