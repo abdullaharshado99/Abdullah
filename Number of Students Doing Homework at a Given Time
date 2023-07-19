@@ -1,0 +1,9 @@
+def busyStudent(self, startTime, endTime, queryTime):
+        count = 0
+        for i, j in zip(startTime, endTime):
+            if i <= queryTime and queryTime <= j:
+                count += 1
+        return count
+busyStudent(None, [1,2,3], [3, 2, 7], 4)
+
+// output = 1
