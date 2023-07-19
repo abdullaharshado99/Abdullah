@@ -1,0 +1,5 @@
+def separateDigits(self, nums):
+        return [int(dig) for x in nums for dig in str(x)]
+separateDigits(None, [13,25,83,77])
+
+// output = [1,3,2,5,8,3,7,7]
