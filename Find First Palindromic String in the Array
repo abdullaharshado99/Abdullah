@@ -1,0 +1,12 @@
+def firstPalindrome(self, words):
+        dol = ''   
+        for i, z in enumerate(words):
+            if z == z[::-1]:
+                dol += z
+                break
+            else:
+                dol
+        return dol
+firstPalindrome(None, ["abc","car","ada","racecar","cool"])
+
+// output = 'ada'
