@@ -1,0 +1,9 @@
+def sumOfUnique(self, nums):
+        count = 0
+        for i, val in enumerate(nums):
+            if nums.count(val) == 1:
+                count += val
+        return count
+sumOfUnique(None, [1, 2, 3, 2])
+
+// output = 4 
