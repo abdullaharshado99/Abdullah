@@ -1,0 +1,15 @@
+def findNonMinOrMax(self, nums):
+        minn, maxx = min(nums), max(nums)
+        nums.sort()
+        for i in range(len(nums)):
+            if len(nums) == 2 or len(nums) == 1:
+                return -1
+            if nums[i] == minn:
+                continue
+            elif nums[i] == maxx:
+                continue
+            else:
+                return nums[i]
+findNonMinOrMax(None, [3, 2, 1, 4])
+
+// output = 2
