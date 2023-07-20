@@ -1,0 +1,9 @@
+def smallInteger(self, nums):
+    supp_num = nums[0]
+    for num in nums:
+        if supp_num > num:
+           supp_num = num
+    return supp_num
+smallInteger(None, [78, 65, 94])
+
+// output = 65
