@@ -1,0 +1,19 @@
+def missingInteger(Self, nums):
+    missing_elem = []
+    expect_num = 0
+
+    for num in nums:
+        while num > expect_num:
+              missing_elem.append(expect_num)
+              expect_num += 1
+        expect_num += 1
+
+    while expect_num <= 50:
+          missing_elem.append(expect_num)
+          expect_num += 1
+
+     return missing_elem
+
+missingInteger(None, [1, 2, 5, 7, 10, 12, 15, 20, 21, 22, 30, 35, 40, 45, 50])
+
+// output = [0, 3, 4, 6, 8, 9, 11, 13, 14, 16, 17, 18, 19, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 36, 37, 38, 39, 41, 42, 43, 44, 46, 47, 48, 49]
