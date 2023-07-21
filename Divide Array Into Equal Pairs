@@ -1,0 +1,13 @@
+def divideArray(self, nums):
+        count = 0
+
+        for i in nums:
+            if nums.count(i)%2==0:
+                count += 1
+
+        if count == len(nums):
+            return True
+        return False
+divideArray(None, [3,2,3,2,2,2])
+
+// output = True
