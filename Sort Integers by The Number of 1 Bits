@@ -1,0 +1,15 @@
+def sortByBits(self, arr):
+        node = []
+
+        for i in arr:
+            count = bin(i)[2:].count('1')
+            node.append([count, i])
+
+        node.sort()
+
+        num = [v for f, v in node]
+
+        return num
+sortByBits(None, [0, 1, 2, 3, 4, 5, 6, 7, 8])
+
+// output = [0,1,2,4,8,3,5,6,7]
