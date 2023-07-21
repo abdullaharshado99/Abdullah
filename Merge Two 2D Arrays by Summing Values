@@ -1,0 +1,11 @@
+def mergeArrays(self, nums1, nums2):
+        from collections import defaultdict
+        d = defaultdict(int)
+        merge = nums1+nums2
+        for ids, val in merge:
+            d[ids] += val
+
+        return sorted(d.items(), key= lambda x : x[0])
+mergeArray(None, [[1,2],[2,3],[4,5]], [[1,4],[3,2],[4,1]])
+
+// output = [[1,6],[2,3],[3,2],[4,6]]
