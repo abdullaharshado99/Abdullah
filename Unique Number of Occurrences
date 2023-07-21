@@ -1,0 +1,10 @@
+def uniqueOccurrences(self, arr):
+        from collections import Counter
+        count = Counter(arr)
+
+        if len(set(count.values())) != len(count):
+            return False
+        return True
+uniqueOccurrences(None, [1,2,2,1,1,3])
+
+// output = True
