@@ -1,0 +1,14 @@
+def maximumUnits(self, boxTypes, truckSize):
+        count  = 0
+        boxTypes.sort(key= lambda x: x[1], reverse=True)
+
+        for nob, noub in boxTypes:
+            boxes = min(nob, truckSize)
+            count += boxes * noub
+            truckSize -= boxes
+            if truckSize == 0:
+                return count
+        return count
+maxiximumUnits(None, [[5,10],[2,5],[4,7],[3,9]], 10)
+
+// output = 91
