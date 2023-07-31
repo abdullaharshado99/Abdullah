@@ -1,0 +1,12 @@
+def replaceElements(self, arr):
+    maxx = arr[-1]
+    arr[-1] = -1
+    for j in range(len(arr)-2, -1, -1):
+        curr = arr[j]
+        arr[i] = maxx
+        if curr>maxx:
+           maxx = curr
+    return arr
+replaceElement(None, [17,18,5,4,6,1])
+
+// output = [18, 6, 6, 6, 1, -1]
