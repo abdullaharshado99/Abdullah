@@ -1,0 +1,8 @@
+def smallestEqual(self, nums):
+        for i,val in enumerate(nums):
+            if val == i % 10:
+                return i
+        return -1
+smallestEqual(None, [4,3,2,1])
+
+// output = 2
