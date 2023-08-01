@@ -1,0 +1,8 @@
+def findFinalValue(self, nums, original):
+        for i in range(0, len(nums)+1):
+            if original in nums:
+                original = original * 2
+        return original
+findFinalValue(None, [5,3,6,1,12], 3)
+
+//output = 24
