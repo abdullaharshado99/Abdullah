@@ -1,0 +1,12 @@
+def minCostToMoveChips(self, position):
+        count_ev , count_od = 0, 0
+
+        for i in position:
+            if i%2==0:
+                count_ev += 1
+            else:
+                count_od += 1
+        return min(count_od, count_ev)
+minCostToMoveChips(None, [2,2,2,3,3])
+
+//output = 2
