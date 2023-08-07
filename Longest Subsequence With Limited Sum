@@ -1,0 +1,15 @@
+def answerQueries(self, nums, queries):
+        nums.sort()
+        arr = []
+
+        for qur in queries:
+            count = node = 0
+            for i in range(len(nums)):
+                if node + nums[i] <= qur:
+                    node += nums[i]
+                    count += 1
+            arr.append(count)
+        return arr
+answerQueries(None, [4,5,2,1], [3,10,21])
+
+// output = [2, 3, 4]
