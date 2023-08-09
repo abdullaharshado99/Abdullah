@@ -1,0 +1,11 @@
+def maximumValue(self, strs):
+        node = -1
+        for i in strs:
+            if i.isdigit():
+                node = max(node, int(i))
+            else:
+                node = max(node, len(i))
+        return node
+maximunValue(None, ["alic3","bob","3","4","00000"])
+
+//output = 5
