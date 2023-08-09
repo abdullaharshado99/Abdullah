@@ -1,0 +1,8 @@
+def singleNumber(self, nums):
+        count = 0
+        for i in nums:
+            count ^= i
+        return count
+singleNumber(None, [2, 2, 1])
+
+//output = 1
