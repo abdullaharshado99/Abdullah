@@ -1,0 +1,15 @@
+def minSubsequence(self, nums):
+        nums.sort()
+        num = []
+
+        while len(nums) > 0:
+            if len(num) == 0:
+                num.append(nums.pop())
+            if sum(num) <= sum(nums): 
+                num.append(nums.pop())
+            else:
+                break
+        return num
+minSubsequence(None, [4, 3, 10, 9, 8])
+
+// output = [10, 9]

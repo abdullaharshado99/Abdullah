@@ -1,0 +1,11 @@
+def sortArrayByParityII(self, nums):
+        num = []
+        even = [x for x in nums if x % 2 == 0]
+        odd = [x for x in nums if x % 2 != 0]
+        for i, j in zip(even, odd):
+            num.append(i)
+            num.append(j)
+        return num
+sortArrayByParityII(None, [4, 2, 5, 7])
+
+//output = [4, 5, 2, 7]

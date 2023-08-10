@@ -1,0 +1,9 @@
+def intersection(self, nums1, nums2):
+        node = []
+        for i in nums1:
+            if i in nums2:
+                node.append(i)
+        return list(set(node))
+intersection(None, [4,9,5], [9,4,9,8,4])
+
+//output = [4, 9]

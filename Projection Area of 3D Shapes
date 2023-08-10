@@ -1,0 +1,10 @@
+def projectionArea(self, grid):
+        
+        xy = sum(len([i for i in g if i != 0]) for g in grid)
+        zx = sum(max(g) for g in grid)
+        yz = sum(max(g) for g in list(zip(*grid)))
+
+        return xy + zx + yz
+projectionArea(None, [[1, 2], [3, 4]])
+
+// output = 17

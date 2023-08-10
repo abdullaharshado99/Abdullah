@@ -1,0 +1,13 @@
+def kWeakestRows(self, mat, k):
+        node = []
+        for i, val in enumerate(mat):
+            count = sum(val)
+            node.append([i, count])
+        node.sort(key= lambda x: x[1])
+        res = [0] * k
+        for j in range(k):
+            res[j] = node[j][0]
+        return res
+kWeakestRows(None, [[1, 1, 0, 0, 0], [1, 1, 1, 1, 0], [1, 0, 0, 0, 0], [1, 1, 0, 0, 0], [1, 1, 1, 1, 1]], 3)
+
+//output = [2, 0, 3]

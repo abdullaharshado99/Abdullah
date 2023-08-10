@@ -1,0 +1,10 @@
+def splitWordsBySeparator(self, words, separator):
+        node = []
+        for word in words:
+            for i in word.split(separator):
+                if i:
+                    node.append(i)
+        return node
+splitWordsBySeparator(None, ["one.two.three","four.five","six"], '.')
+
+//output = ["one","two","three","four","five","six"]
