@@ -5,6 +5,7 @@ def arrayStringsAreEqual(self, word1, word2):
             return True
         else:
             return False
+
 arrayStringsAreEqual(None, ["ab", "c"], ["a", "bc"])
 
 // output = True
