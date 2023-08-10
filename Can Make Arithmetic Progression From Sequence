@@ -1,0 +1,10 @@
+def canMakeArithmeticProgression(self, arr):
+        arr.sort()
+
+        for i, j in zip(arr, arr[1:]):
+            if j-i != arr[1]-arr[0]:
+                return False
+        return True
+canMakeArithmeticProgression(None, [3, 5, 1])
+
+//output = True
