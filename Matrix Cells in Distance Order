@@ -1,0 +1,10 @@
+def allCellsDistOrder(self, rows, cols, rCenter, cCenter):
+        def dist(points):
+            pi, pj = points
+            return abs(pi-rCenter)+abs(pj-cCenter)
+
+        points = [(i, j) for i in range(rows) for j in range(cols)]
+        return sorted(points, key=dist)
+allCellsDistOrder(None, 1, 2, 0, 0)
+
+//output = [[0,0],[0,1]]
