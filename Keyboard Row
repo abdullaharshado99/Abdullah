@@ -1,0 +1,14 @@
+def findWords(self, words):
+        s1 = {'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'}
+        s2 = {'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l'}
+        s3 = {'z', 'x', 'c', 'v', 'b', 'n', 'm'}
+        node = []
+
+        for w in words:
+            word = set(w.lower())
+            if word&s1 == word or word&s2 == word or word&s3 == word:
+                node += [w]
+        return node
+findWords(None, ["Hello","Alaska","Dad","Peace"])
+
+# output = ["Alaska","Dad"]
