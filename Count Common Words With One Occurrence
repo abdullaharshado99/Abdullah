@@ -1,0 +1,10 @@
+def countWords(self, words1, words2):
+        w1, w2, count = words1, words2, 0
+
+        for w in w1:
+            if w1.count(w) == w2.count(w) == 1:
+                count += 1
+        return count
+countWords(None, ["leetcode","is","amazing","as","is"], ["amazing","leetcode","is"])
+
+#output = 2
