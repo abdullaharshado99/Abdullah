@@ -1,0 +1,13 @@
+def findTheArrayConcVal(self, nums):
+        count = 0
+        while nums:
+            i = str(nums.pop(0))
+            j = ''
+            if nums:
+                j = str(nums.pop())
+
+            count += int(i+j)
+        return count
+findTheArrayConcVal(None, [5,14,13,8,12])
+
+#output = 673
