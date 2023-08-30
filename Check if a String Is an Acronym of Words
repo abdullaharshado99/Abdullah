@@ -1,0 +1,8 @@
+def isAcronym(self, words, s):
+        res = ''
+        for i in words:
+            res += i[0]
+        return res==s
+isAcronym(None, ["alice","bob","charlie"],  "abc")
+
+#output = True
