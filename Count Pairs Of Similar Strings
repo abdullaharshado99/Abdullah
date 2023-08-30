@@ -1,0 +1,12 @@
+def similarPairs(self, words):
+        from collections import defaultdict
+
+        dd = defaultdict(int)
+
+        for word in words:
+            dd[tuple(sorted(set(word)))] += 1
+
+        return sum(v * (v-1)// 2 for v in dd.values())
+similarPairs(None, ["aba","aabb","abcd","bac","aabc"])
+
+#output = 2
