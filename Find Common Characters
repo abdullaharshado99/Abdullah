@@ -1,0 +1,10 @@
+def commonChars(self, words):
+        node = []
+        for i in set(words[0]):
+            n= min([word.count(i) for word in words])
+            if n:
+                node += [i]*n
+        return node
+commonChars(None, ["bella","label","roller"])
+
+#output = ['e', 'l', 'l']
