@@ -1,0 +1,6 @@
+def smallestRangeI(self, nums, k):
+        minn, maxx = min(nums), max(nums)
+        return max(0, maxx-minn-2*k)
+smallestRangeI(None, [0,10], 2)
+
+#output = 6
