@@ -1,0 +1,12 @@
+def relativeSortArray(self, arr1, arr2):
+        node = []
+        arr1.sort()
+        for val in arr2:
+            while val in arr1:
+                node.append(val)
+                arr1.remove(val)
+
+        return node + arr1
+relativeSortArray(None, [2,3,1,3,2,4,6,7,9,2,19], [2,1,4,3,9,6])
+
+#output = [2,2,2,1,4,3,3,9,6,7,19]
