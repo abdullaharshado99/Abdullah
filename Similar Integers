@@ -1,7 +1,7 @@
 def similarInt(self, arr1, arr2):
     pt1 = pt2 = count = 0
     while pt1 < len(arr1) and pt2 < len(arr2):
-        if arr1[pt1] == arr2[pt2]:
+        if arr1[pt1] & arr2[pt2]:
             count += 1
         pt1 += 1
         pt2 += 1
