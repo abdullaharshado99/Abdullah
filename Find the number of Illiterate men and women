@@ -1,0 +1,13 @@
+total_population, percentage_men, percentage_total_literacy, percentage_literate_men = 80000, 52.0, 48.0, 35.0
+
+num_men = (percentage_men / 100) * total_population
+num_women = total_population - num_men
+
+num_literate_men = (percentage_literate_men / 100) * total_population
+num_literate_women = (percentage_total_literacy / 100) * total_population - num_literate_men
+
+num_illiterate_men = num_men - num_literate_men
+num_illiterate_women = num_women - num_literate_women
+
+print("Total number of illiterate men:", int(num_illiterate_men))
+print("Total number of illiterate women:", int(num_illiterate_women))
