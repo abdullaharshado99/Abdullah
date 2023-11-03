@@ -1,0 +1,3 @@
+while True:
+    age = int(input('Enter your age: '))
+    print(f"Your were born in {1022-age+1001}")
